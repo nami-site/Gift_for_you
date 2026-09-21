@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Happy Birthday</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<!-- =========================================
+     PASSCODE SCREEN
+========================================= -->
+
+<section
+    id="password-screen"
+    class="password-screen"
+>
+
+    <!-- DECORATIONS -->
+
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+
+    <div class="sparkle sparkle-1">✦</div>
+    <div class="sparkle sparkle-2">✧</div>
+    <div class="sparkle sparkle-3">✦</div>
+    <div class="sparkle sparkle-4">✧</div>
+
+    <div class="password-card">
+
+        <p class="passcode-small-title">
+            a little secret..
+        </p>
+
+        <h1>
+            Enter the passcode
+        </h1>
+
+        <p class="password-question">
+            It's a special day...<br>
+            can you guess the number?
+        </p>
+
+        <!-- PASSWORD IMAGE -->
+
+        <div class="password-photo">
+
+            <div class="password-tape"></div>
+
+            <img
+                src="password-photo.jpg"
+                alt="A little memory"
+            >
+
+        </div>
+
+        <p class="waiting-text">
+            Something is waiting for you...
+        </p>
+
+        <!-- PASSCODE -->
+
+        <div class="passcode-boxes">
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric"
+                class="passcode-input"
+            >
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric"
+                class="passcode-input"
+            >
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric"
+                class="passcode-input"
+            >
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric"
+                class="passcode-input"
+            >
+
+        </div>
+
+        <button
+            class="enter-button"
+            onclick="checkPassword()"
+        >
+            Enter →
+        </button>
+
+        <p
+            id="error-message"
+            class="error-message"
+        ></p>
+
+    </div>
+
+    <div class="bottom-clouds">
+
+        <div class="bottom-cloud bottom-cloud-1"></div>
+        <div class="bottom-cloud bottom-cloud-2"></div>
+        <div class="bottom-cloud bottom-cloud-3"></div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     BIRTHDAY CONTENT
+========================================= -->
+
+<main
+    id="birthday-content"
+    class="birthday-content"
+>
+
+    <!-- =====================================
+         HERO / GIF
+    ====================================== -->
+
+    <section class="hero-section">
+
+        <div class="hero-sparkle hero-sparkle-1">
+            ✦
+        </div>
+
+        <div class="hero-sparkle hero-sparkle-2">
+            ✧
+        </div>
+
+        <div class="gif-frame">
+
+            <div class="gif-top">
+
+                <span>
+                    ● REC
+                </span>
+
+
+            </div>
+
+            <video
+                src="birthday.mp4"
+                alt="Happy Birthday"
+                class="birthday-gif"
+                autoplay
+                muted
+                loop
+                playsinline
+            ></video>
+
+        </div>
+
+        <h1>
+           Happy Birthday Sandeshhh 🤟
+        </h1>
+
+        <div class="birthday-lines">
+
+            <span></span>
+
+            <div>
+                ✦
+            </div>
+
+            <span></span>
+
+        </div>
+
+        <p class="hero-subtitle">
+            A little surprise, just for you.
+        </p>
+
+    </section>
+
+    <!-- =====================================
+         BIRTHDAY WISH
+    ====================================== -->
+
+    <section class="wish-section">
+
+        <div class="sky-decoration cloud-sky-1"></div>
+        <div class="sky-decoration cloud-sky-2"></div>
+
+        <div class="wish-paper">
+
+            <div class="paper-tape"></div>
+
+            <p class="wish-dear">
+                Dear boo,
+            </p>
+
+            <p>
+                Today is your special day —
+                the day the world got a little
+                brighter because you're in it.
+            </p>
+
+            <p>
+                May your heart always be as light
+                as the sky, your days as happy
+                as your dreams, and your life
+                filled with all the beautiful moments
+                you deserve.
+            </p>
+
+            <p>
+                I hope the days ahead of you
+                will always be gentle,
+                and everything you wish for
+                will slowly become real.
+            </p>
+
+            <p>
+                Thank you for being here
+                and for becoming part of
+                so many memorable moments.
+            </p>
+
+            <p class="birthday-wish">
+                Janmadin ko subhakamana!
+            </p>
+
+            <p class="stay-happy">
+                Hope you always smile and never think negative anymore.
+            </p>
+
+            
+
+        </div>
+
+        <div class="wish-sparkle sparkle-wish-1">
+            ✦
+        </div>
+
+        <div class="wish-sparkle sparkle-wish-2">
+            ✧
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         LITTLE MOMENTS
+    ====================================== -->
+<section class="gallery-section">
+<div class="gallery-heading">
+
+            <div class="heading-sparkle">
+                ✦
+            </div>
+
+            <p>
+                Good Times 😝
+            </p>
+
+            <h2>
+                Little Moments Together
+            </h2>
+
+            <p class="gallery-subtitle">
+                A few memories we made along the way.
+            </p>
+
+        </div>
+
+        <!-- PHOTO GRID -->
+
+        <div class="photo-grid">
+
+            <!-- PHOTO 1 -->
+
+            <div class="photo-card photo-1">
+
+                <div class="photo-tape"></div>
+
+                <img
+                    src="photo1.jpg"
+                    alt="Memory 1"
+                >
+
+                <p>
+                    Went down and got comfy 
+                </p>
+
+            </div>
+
+            <!-- PHOTO 2 -->
+
+            <div class="photo-card photo-2">
+
+                <div class="photo-tape"></div>
+
+                <img
+                    src="photo2.jpg"
+                    alt="Memory 2"
+                >
+
+                <p>
+                    Look like kidnap 😂
+                </p>
+
+            </div>
+
+            <!-- PHOTO 3 -->
+
+            <div class="photo-card photo-3">
+
+                <div class="photo-tape"></div>
+
+                <img
+                    src="photo3.jpg"
+                    alt="Memory 3"
+                >
+
+                <p>
+                    Our adventure
+                </p>
+
+            </div>
+
+            <!-- PHOTO 4 -->
+
+            <div class="photo-card photo-4">
+
+                <div class="photo-tape"></div>
+
+                <img
+                    src="photo4.jpg"
+                    alt="Memory 4"
+                >
+
+                <p>
+                    We look cute heheee
+                </p>
+
+            </div>
+
+            <!-- PHOTO 5 -->
+
+            <div class="photo-card photo-5">
+
+                <div class="photo-tape"></div>
+
+                <img
+                    src="photo5.jpg"
+                    alt="Memory 5"
+                >
+
+                <p>
+                    We clean up noicee
+                </p>
+
+            </div>
+
+            <!-- PHOTO 6 -->
+
+            <div class="photo-card photo-6">
+
+                <div class="photo-tape"></div>
+
+                <img
+                    src="photo6.jpg"
+                    alt="Memory 6"
+                >
+
+                <p>
+                    Just chilling 😆
+                </p>
+
+            </div>
+
+            <!-- PHOTO 7 -->
+
+            <div class="photo-card photo-7">
+
+                <div class="photo-tape"></div>
+
+                <img
+                    src="photo7.jpg"
+                    alt="Memory 7"
+                >
+
+                <p>
+                    Sleeping boii HAHAHAA
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="gallery-decoration decoration-left">
+            ✦
+        </div>
+<div class="gallery-decoration decoration-right">
+            ✧
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         ENDING
+    ====================================== -->
+
+    <section class="ending-section">
+
+        <div class="ending-sparkle sparkle-end-1">
+            ✦
+        </div>
+
+        <div class="ending-sparkle sparkle-end-2">
+            ✧
+        </div>
+
+        <p class="once-again">
+            Once again...
+        </p>
+
+        <h1>
+            HAPPY BIRTHDAY!
+        </h1>
+
+        <p class="ending-text">
+            May your days always be filled<br>
+            with happiness and beautiful memories.
+        </p>
+
+        <div class="ending-line">
+
+            <span></span>
+
+            <div>
+                ✦
+            </div>
+
+            <span></span>
+
+        </div>
+
+        <p class="ending-from">
+            from nami 🫡
+        </p>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
